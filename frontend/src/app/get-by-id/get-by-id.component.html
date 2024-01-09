@@ -1,0 +1,31 @@
+<!-- <div class="center-container">
+    <div *ngIf="list" class="custom-container">
+        <div class="card" style="margin-top: 200px;">
+            <div class="custom-content">
+                <p class="custom-text">{{ list.description }}</p>
+                <p class="custom-text">{{list.date}}</p>
+            </div>
+            <div class="custom-footer">
+                <button (click)="back()" class="btn btn-secondary">Back</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="center-container">
+    <div *ngIf="list" class="custom-container">
+        <div class="card" style="margin-bottom:100px;">
+            <div class="custom-content">
+                <p class="custom-text">{{ list.description }}</p>
+            </div>
+            <div class="custom-footer">
+                <p class="custom-text" style="margin-right: 10px;">{{list.date}}</p>
+                <button (click)="back()" class="btn btn-secondary">Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

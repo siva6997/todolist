@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="header">
+        <div class="col-5 h1" style="margin-left: 350px;">𝓣𝓸 𝓓𝓸 𝓛𝓲𝓼𝓽</div>
+    </div>
+
+    <div class="add-button">
+        <button (click)="post()" class="btn btn-secondary"> ➤ Add Task </button>
+    </div>
+
+    <div class="card-container">
+        <div *ngFor="let l of list" class="card">
+            <div class="card-body">
+                <p class="card-text">{{ l.description }}</p>
+                <div style="text-align: right;">
+                    <p class="card-text">{{ l.date }}</p>
+                   
+                </div>
+            </div>
+            <div class="card-footer">
+                <button (click)="getById(l._id)" class="btn btn-list">Show</button>
+                <button (click)="update(l._id)" class="btn btn-update">Update</button>
+                <button (click)="deleteid(l._id)" class="btn btn-delete">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+
+ 
+
+
